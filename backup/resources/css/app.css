@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Canvas';
+    src: url('../../public/assets/fonts/Canvas_Regular.otf');
+}
+
+body {
+    font-family: 'Urbanist';
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #313838;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #B0906B;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+/* external css: flickity.css */
+
+.flickity-viewport {
+  height: 500px !important;
+  top: 50px;
+}
+
+* { box-sizing: border-box; }
+
+
+.flickity-page-dots {
+  bottom: 20px !important;
+}
+
+.carousel-cell {
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 400px;
+  }
+}
+
+.flickity-button {
+  background-color: #313838 !important;
+  color: #a2731e !important
+}
+
+
+ 
+ 
